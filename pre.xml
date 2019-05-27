@@ -13,4 +13,9 @@
             <class name="api.test.ServicePointsCapacity" />
         </classes>
     </test>
+	<test name="ServicePointLatLongAPI">
+        <classes>
+            <class name="api.test.ServicePointLatLong" />
+        </classes>
+    </test>
 </suite>
