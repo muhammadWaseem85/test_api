@@ -1,0 +1,76 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="test" verbose="1" >
+    <listeners>
+        <listener class-name="web.custom.CustomTestNGReporter" />
+    </listeners>
+
+    <listeners>
+        <listener class-name="web.listeners.ExtentReporterNG" />
+    </listeners>
+
+    <test name="RestAPI">
+        <classes>
+            <class name="api.test.ResetServicePoints" />
+        </classes>
+    </test>
+
+    <test name="ShipmentSoftAllocationPostAPI">
+        <classes>
+            <class name="api.test.ShipmentSoftAllocationPost" />
+        </classes>
+    </test>
+
+    <test name="ShipmentHardAllocationPostAPI">
+        <classes>
+            <class name="api.test.ShipmentHardAllocationPost" />
+        </classes>
+    </test>
+
+    <test name="ShipmentGetAPI">
+        <classes>
+            <class name="api.test.ShipmentGet" />
+        </classes>
+    </test>
+
+    <test name="ShipmentPatchAPI">
+        <classes>
+            <class name="api.test.ShipmentPatch" />
+        </classes>
+    </test>
+
+    <test name="ShipmentQueue-NearestPointAPI">
+        <classes>
+            <class name="api.test.ShipmentQueueAndNearestPoint" />
+        </classes>
+    </test>
+
+    <test name="ShipmentDeleteAPI">
+        <classes>
+            <class name="api.test.ShipmentDelete" />
+        </classes>
+    </test>
+
+    <test name="ServicePointCapacityAPI">
+        <classes>
+            <class name="api.test.ServicePointsCapacity" />
+        </classes>
+    </test>
+
+    <test name="ServicePointLatLongAPI">
+        <classes>
+            <class name="api.test.ServicePointLatLong" />
+        </classes>
+    </test>
+    <test name="CourierApi">
+        <classes>
+            <class name="api.test.Courier" />
+        </classes>
+    </test>
+    <test name="EndUserApi">
+        <classes>
+            <class name="api.test.EndUser" />
+        </classes>
+    </test>
+
+</suite>

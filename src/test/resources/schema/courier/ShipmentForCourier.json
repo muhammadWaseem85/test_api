@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "sp_id": {
+          "type": "string"
+        },
+        "alt_sp_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "address_1": {
+          "type": "string"
+        },
+        "address_2": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "country_iso": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "distance": {
+          "type": "integer"
+        },
+        "lockers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "uid": {
+                  "type": "string"
+                },
+                "pieces": {
+                  "type": "object",
+                  "properties": {
+                    "pickup": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "delivery": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "piece_id": {
+                              "type": "string"
+                            },
+                            "shipment_id": {
+                              "type": "string"
+                            },
+                            "compartment_id": {
+                              "type": "integer"
+                            },
+                            "alloc_type": {
+                              "type": "integer"
+                            },
+                            "auth": {
+                              "type": "object",
+                              "properties": {
+                                "challenge": {
+                                  "type": "string"
+                                },
+                                "response": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "challenge",
+                                "response"
+                              ]
+                            },
+                            "token": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "piece_id",
+                            "shipment_id",
+                            "compartment_id",
+                            "alloc_type",
+                            "auth",
+                            "token"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "pickup",
+                    "delivery"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "uid",
+                "pieces"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "sp_id",
+        "alt_sp_id",
+        "name",
+        "address_1",
+        "address_2",
+        "city",
+        "zip",
+        "country_iso",
+        "longitude",
+        "latitude",
+        "distance",
+        "lockers"
+      ]
+    }
+  ]
+}

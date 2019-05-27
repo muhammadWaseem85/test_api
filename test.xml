@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="test" verbose="1" >
+	<listeners>
+		<listener class-name="web.custom.CustomTestNGReporter" />
+	</listeners>
+
+	<listeners>
+		<listener class-name="web.listeners.ExtentReporterNG" />
+	</listeners>
+
+	<test name="ShipmentApi">
+		<classes>
+			<class name="api.test.Shipment" />
+		</classes>
+	</test>
+	<test name="ServicePointApi">
+		<classes>
+			<class name="api.test.ServicePointsCapacity" />
+		</classes>
+	</test>
+	<test name="CourierApi">
+		<classes>
+			<class name="api.test.Courier" />
+		</classes>
+	</test>
+	<test name="EndUserApi">
+		<classes>
+			<class name="api.test.EndUser" />
+		</classes>
+	</test>
+
+	<test name="ShipmentsWeb">
+		<classes>
+			<class name="web.tests.Shipments" />
+		</classes>
+	</test>
+</suite>

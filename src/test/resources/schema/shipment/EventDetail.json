@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "type": "integer"
+        },
+        "event_name": {
+          "type": "string"
+        },
+        "event_date": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "event_type",
+        "event_name",
+        "event_date"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "type": "integer"
+        },
+        "event_name": {
+          "type": "string"
+        },
+        "event_date": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "event_type",
+        "event_name",
+        "event_date"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "type": "integer"
+        },
+        "event_name": {
+          "type": "string"
+        },
+        "event_date": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "event_type",
+        "event_name",
+        "event_date"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "piece_uid": {
+          "type": "string"
+        },
+        "piece_id": {
+          "type": "string"
+        },
+        "shipment_id": {
+          "type": "string"
+        },
+        "sp_id": {
+          "type": "string"
+        },
+        "alt_sp_id": {
+          "type": "string"
+        },
+        "queued_time": {
+          "type": "string"
+        },
+        "queue_number": {
+          "type": "integer"
+        },
+        "queue_expiry": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "piece_uid",
+        "piece_id",
+        "shipment_id",
+        "sp_id",
+        "alt_sp_id",
+        "queued_time",
+        "queue_number",
+        "queue_expiry"
+      ]
+    }
+  ]
+}

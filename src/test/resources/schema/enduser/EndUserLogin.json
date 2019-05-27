@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    },
+    "refresh_token": {
+      "type": "string"
+    },
+    "expires_in": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "username",
+    "user_id",
+    "token",
+    "refresh_token",
+    "expires_in"
+  ]
+}

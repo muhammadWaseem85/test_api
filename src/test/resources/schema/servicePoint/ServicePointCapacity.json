@@ -1,0 +1,164 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "sp_id": {
+          "type": "integer"
+        },
+        "alt_sp_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "address_1": {
+          "type": "string"
+        },
+        "address_2": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "country_iso": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "capacity": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "depth": {
+                  "type": "integer"
+                },
+                "compartments": {
+                  "type": "integer"
+                },
+                "used": {
+                  "type": "integer"
+                },
+                "free": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "size",
+                "width",
+                "height",
+                "depth",
+                "compartments",
+                "used",
+                "free"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "depth": {
+                  "type": "integer"
+                },
+                "compartments": {
+                  "type": "integer"
+                },
+                "used": {
+                  "type": "integer"
+                },
+                "free": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "size",
+                "width",
+                "height",
+                "depth",
+                "compartments",
+                "used",
+                "free"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "depth": {
+                  "type": "integer"
+                },
+                "compartments": {
+                  "type": "integer"
+                },
+                "used": {
+                  "type": "integer"
+                },
+                "free": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "size",
+                "width",
+                "height",
+                "depth",
+                "compartments",
+                "used",
+                "free"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "sp_id",
+        "alt_sp_id",
+        "name",
+        "address_1",
+        "address_2",
+        "city",
+        "zip",
+        "country_iso",
+        "latitude",
+        "longitude",
+        "capacity"
+      ]
+    }
+  ]
+}

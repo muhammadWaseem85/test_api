@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "piece_uid": {
+          "type": "string"
+        },
+        "piece_id": {
+          "type": "integer"
+        },
+        "piece_barcode": {
+          "type": "string"
+        },
+        "normal_event_type": {
+          "type": "integer"
+        },
+        "shipment_id": {
+          "type": "null"
+        },
+        "expiry_hours": {
+          "type": "integer"
+        },
+        "sp_id": {
+          "type": "integer"
+        },
+        "processed": {
+          "type": "integer"
+        },
+        "alt_sp_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "sms": {
+          "type": "string"
+        },
+        "events": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "event_type": {
+                  "type": "integer"
+                },
+                "event_text": {
+                  "type": "string"
+                },
+                "utc_event_date": {
+                  "type": "string"
+                },
+                "actor": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "event_type",
+                "event_text",
+                "utc_event_date",
+                "actor"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "event_type": {
+                  "type": "integer"
+                },
+                "event_text": {
+                  "type": "string"
+                },
+                "utc_event_date": {
+                  "type": "string"
+                },
+                "actor": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "event_type",
+                "event_text",
+                "utc_event_date",
+                "actor"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "event_type": {
+                  "type": "integer"
+                },
+                "event_text": {
+                  "type": "string"
+                },
+                "utc_event_date": {
+                  "type": "string"
+                },
+                "actor": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "event_type",
+                "event_text",
+                "utc_event_date",
+                "actor"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "event_type": {
+                  "type": "integer"
+                },
+                "event_text": {
+                  "type": "string"
+                },
+                "utc_event_date": {
+                  "type": "string"
+                },
+                "actor": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "event_type",
+                "event_text",
+                "utc_event_date",
+                "actor"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "piece_uid",
+        "piece_id",
+        "piece_barcode",
+        "normal_event_type",
+        "shipment_id",
+        "expiry_hours",
+        "sp_id",
+        "processed",
+        "alt_sp_id",
+        "name",
+        "sms",
+        "events"
+      ]
+    }
+  ]
+}

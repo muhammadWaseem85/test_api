@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="test" verbose="1" >
+	<listeners>
+		<listener class-name="web.custom.CustomTestNGReporter" />
+	</listeners>
+
+	<listeners>
+		<listener class-name="web.listeners.ExtentReporterNG" />
+	</listeners>
+    <test name="ServicePointCapacityAPI">
+        <classes>
+            <class name="api.test.ServicePointsCapacity" />
+        </classes>
+    </test>
+</suite>

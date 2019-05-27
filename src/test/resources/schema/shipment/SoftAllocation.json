@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "piece_info": {
+      "type": "object",
+      "properties": {
+        "piece_id": {
+          "type": "string"
+        },
+        "piece_uid": {
+          "type": "string"
+        },
+        "sp_id": {
+          "type": "integer"
+        },
+        "alt_sp_id": {
+          "type": "string"
+        },
+        "alloc_type": {
+          "type": "integer"
+        },
+        "shipment_type": {
+          "type": "integer"
+        },
+        "locker_id": {
+          "type": "string"
+        },
+        "locker_type": {
+          "type": "string"
+        },
+        "locker_position": {
+          "type": "string"
+        },
+        "compartment_id": {
+          "type": "string"
+        },
+        "allocated_size": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "string"
+            },
+            "height": {
+              "type": "string"
+            },
+            "depth": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "width",
+            "height",
+            "depth"
+          ]
+        }
+      },
+      "required": [
+        "piece_id",
+        "piece_uid",
+        "sp_id",
+        "alt_sp_id",
+        "alloc_type",
+        "shipment_type",
+        "locker_id",
+        "locker_type",
+        "locker_position",
+        "compartment_id",
+        "allocated_size"
+      ]
+    },
+    "changed_keys": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "required": [
+    "code",
+    "message",
+    "piece_info",
+    "changed_keys"
+  ]
+}

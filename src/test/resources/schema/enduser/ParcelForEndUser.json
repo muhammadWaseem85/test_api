@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "sp_id": {
+          "type": "integer"
+        },
+        "prefix": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country_iso": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "carrier_name": {
+          "type": "string"
+        },
+        "lockers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "uid": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "pieces": {
+                  "type": "object",
+                  "properties": {
+                    "pickup": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "piece_id": {
+                              "type": "string"
+                            },
+                            "parcel_id": {
+                              "type": "integer"
+                            },
+                            "shipment_id": {
+                              "type": "null"
+                            },
+                            "compartment_id": {
+                              "type": "integer"
+                            },
+                            "shipment_type": {
+                              "type": "integer"
+                            },
+                            "token": {
+                              "type": "string"
+                            },
+                            "signature": {
+                              "type": "integer"
+                            },
+                            "expiry_time": {
+                              "type": "integer"
+                            },
+                            "auth": {
+                              "type": "object",
+                              "properties": {
+                                "challenge": {
+                                  "type": "string"
+                                },
+                                "response": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "challenge",
+                                "response"
+                              ]
+                            },
+                            "carrier_name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "piece_id",
+                            "parcel_id",
+                            "shipment_id",
+                            "compartment_id",
+                            "shipment_type",
+                            "token",
+                            "signature",
+                            "expiry_time",
+                            "auth",
+                            "carrier_name"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "pickup"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "uid",
+                "position",
+                "pieces"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "sp_id",
+        "prefix",
+        "name",
+        "address",
+        "zip",
+        "city",
+        "country_iso",
+        "longitude",
+        "latitude",
+        "carrier_name",
+        "lockers"
+      ]
+    }
+  ]
+}
