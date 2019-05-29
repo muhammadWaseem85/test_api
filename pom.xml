@@ -296,7 +296,7 @@
                         <version>${maven-failsafe-plugin.version}</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>pre.xml</suiteXmlFile>
+                                <suiteXmlFile>web.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <testErrorIgnore>true</testErrorIgnore>
                             <testFailureIgnore>true</testFailureIgnore>
