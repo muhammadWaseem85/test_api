@@ -7,7 +7,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+//import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import web.config.ConfigFileReader;
 
 public class ServicePointsCapacity {
@@ -45,7 +45,7 @@ public class ServicePointsCapacity {
         Assert.assertEquals(response.statusCode(), 200);
         body = response.getBody().asString();
         System.out.println(body);
-        response.then().body(matchesJsonSchemaInClasspath("schema/servicePoint/ServicePointCapacity.json"));
+        //response.then().body(matchesJsonSchemaInClasspath("schema/servicePoint/ServicePointCapacity.json"));
     }
 
     @Test (dependsOnMethods={"CheckServicePointCapacity"}, alwaysRun=true)
