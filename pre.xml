@@ -8,14 +8,10 @@
 	<listeners>
 		<listener class-name="web.listeners.ExtentReporterNG" />
 	</listeners>
-    <test name="ServicePointCapacityAPI">
+    <test name="SLT">
         <classes>
-            <class name="api.test.ServicePointsCapacity" />
+            <class name="api.test.SLT" />
         </classes>
     </test>
-	<test name="ServicePointLatLongAPI">
-        <classes>
-            <class name="api.test.ServicePointLatLong" />
-        </classes>
-    </test>
+
 </suite>
